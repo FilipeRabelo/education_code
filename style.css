@@ -8,9 +8,10 @@ body{
     display: none;
 }
 
-#btn{
+#btnGetTime{
     background-color: chartreuse;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
+
 }
