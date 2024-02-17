@@ -1,28 +1,31 @@
-body{
+  body{
     display: block;
-    background: url("img.jpg") no-repeat;
+    background: url('img.jpg') no-repeat;
     background-size: cover;
+    height: 100vh; /* para manter a img na tela toda height */
+
     color: aliceblue;
     text-align: center;
-}
-h1{
+  }
+
+  h1{
     font-size: 3rem;
-}
+  }
 
-.hide{
+  .hide{
     display: none;
-}
+  }
 
-#btnGetTime{
+  #btnGetTime{
     background-color: chartreuse;
     border-radius: 5px;
     font-size: 2.5rem;
     font-weight: bold;
     cursor: pointer;
-}
+  }
 
 
-p{
+  p{
     text-align: center;
     align-content: center;
     margin: 2rem auto;
@@ -33,21 +36,23 @@ p{
     border-radius: 5px;
     width: max-content;
     cursor: pointer;
-}
+  }
 
-    @media(max-width: 600px){
 
-        #btnGetTime{
-            background-color: aqua;
-            font-size: 1rem;
-        }
 
-        body{
-            background: url("bng_cel.jpg") no-repeat;
-            background-size: cover;
-            font-size: 16px;
-        }
+  @media(max-width: 600px){
+
+    #btnGetTime{
+      background-color: aqua;
+      font-size: 1rem;
     }
+
+    body{
+      background: url("bng_cel.jpg") no-repeat;
+      background-size: cover;
+      font-size: 16px;
+    }
+  }
 
 
 
