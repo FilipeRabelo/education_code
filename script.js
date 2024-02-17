@@ -1,32 +1,32 @@
-    console.log("Hello World");
+  console.log("Hello World");
 
-    let btn = document.getElementById("btnGetTime");
+  let btn = document.getElementById("btnGetTime");
 
-    btn.addEventListener("click", toggleTimer);
+  btn.addEventListener("click", toggleTimer);
 
-    function toggleTimer(){
+  function toggleTimer(){
 
-        let timeDisplay = document.getElementById(("getTimer"));
-        timeDisplay.classList.toggle("hide");
+    let timeDisplay = document.getElementById(("getTimer"));
+    timeDisplay.classList.toggle("hide");
 
-        if(!timeDisplay.classList.contains("hide")){
+    if(!timeDisplay.classList.contains("hide")){
 
-          updateTimer();
-        }
+      updateTimer();
     }
+  }
 
-    function updateTimer(){
+  function updateTimer(){
 
-        let now = new Date();
+    let now = new Date();
 
-        let hours = String(now.getHours()).padStart(2, '0');
-        let mins  = String(now.getMinutes()).padStart(2, '0');
-        let secs  = String(now.getSeconds()).padStart(2, '0');
+    let hours = String(now.getHours()).padStart(2, '0');
+    let mins  = String(now.getMinutes()).padStart(2, '0');
+    let secs  = String(now.getSeconds()).padStart(2, '0');
 
-        document.getElementById("getTimer").innerHTML = `${hours}:${mins}:${secs}`;
+    document.getElementById("getTimer").innerHTML = `${hours}:${mins}:${secs}`;
 
-        console.log(`${hours}:${mins}:${secs}`);
+    console.log(`${hours}:${mins}:${secs}`);
 
-    }
+  }
 
-    setInterval(updateTimer, 1000);
+  setInterval(updateTimer, 1000);

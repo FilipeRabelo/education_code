@@ -21,12 +21,8 @@ h1{
     cursor: pointer;
 }
 
-#btnGetTime:hover{
-    background-color: aliceblue;
-}
 
 p{
-
     text-align: center;
     align-content: center;
     margin: 2rem auto;
@@ -36,14 +32,29 @@ p{
     color: black;
     border-radius: 5px;
     width: max-content;
-
-    /*width: 5rem;*/
-    /*align-content: center;*/
-    /*align-items: center;*/
-    /*text-align: center;*/
     cursor: pointer;
 }
 
-p:hover{
+    @media(max-width: 600px){
 
-}
+        #btnGetTime{
+            background-color: aqua;
+            font-size: 1rem;
+        }
+
+        body{
+            background: url("bng_cel.jpg") no-repeat;
+            background-size: cover;
+            font-size: 16px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
