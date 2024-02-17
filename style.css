@@ -50,6 +50,7 @@
     body{
       background: url("bng_cel.jpg") no-repeat;
       background-size: cover;
+      height: 100vh;
     }
   }
 
