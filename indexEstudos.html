@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+
+	<body>
+		<div class="container">
+			<p id="code"></p>
+		</div>
+
+		<script type="text/javascript">
+
+			let array = ["banana", "coco", "maca", "pera"];
+      let frase = array.join(' ').toUpperCase();
+      // console.log(frase);
+
+													// ---------------------------------------------
+
+      let nomes = ['filipe', 'rabelo', 'figueiredo', 'lana'];
+
+      for(let i = 0; i < nomes.length; i++) {{
+
+				let nomeCompleto = nomes.join(' ').toUpperCase();
+
+        // console.log(nomeCompleto);
+        // console.log(`Letras maiúsculas ${i} - ${nomeCompleto}`);
+      }}
+
+   										//	-----------------------------------------------
+
+      // var i = 10;
+      // console.log(i); // nao tem anda de dentro da function
+
+
+			let arrayFrutas = ["banana", "coco", "maca", "pera"];
+      console.log(arrayFrutas);
+
+			// let fraseFrutas = arrayFrutas.join(' ').toUpperCase().replace('coco', 'abacaxi').slice(0, 12).concat('...');
+      // console.log(fraseFrutas);
+
+      let fraseFrutas = arrayFrutas.join(' ')
+																		.toUpperCase()
+																		.replace('coco', 'abacaxi')
+																		.concat('..........')
+																		.slice(1, 24);
+
+      console.log(`Saída: ${fraseFrutas}`); // Saída: ANANA COCO MACA PERA...
+
+      // .replace('COCO', 'abacaxi'); // Substitui 'COCO' por 'abacaxi'
+      // .slice(0, 12); // Pega os primeiros 12 caracteres da frase
+      // .concat('...'); // Adiciona reticências ao final da frase
+
+												//---------------------------------------------
+
+      function upCase(stringUpCase){
+
+        stringUpCase = stringUpCase.toUpperCase(); // precisa atribuir 'reatribuir' o resultado de toUpperCase() de volta à variável
+																									 // stringUpCase para que a string seja modificada corretamente
+        console.log(stringUpCase);
+			}
+
+      upCase("hello world");
+
+      // if(!teste_uppCase){
+      //   string_upperCase.toUpperCase();
+      // }else{
+      //   console.log("Empty String");
+      // }
+
+										// -------------------------------------------------
+
+			// ISSO PODE
+
+      function saudacao(nome = "mundo") {
+        console.log(`Olá, ${nome}!`);
+      }
+
+      saudacao(); // Saída: Olá, mundo!
+
+			// ISSO NAO PODE
+
+      function saudacao(nome) {
+        nome = "mundo"; // Define "mundo" como o valor padrão
+        console.log(`Olá, ${nome}!`);
+      }
+
+      saudacao(); // Saída: Olá, mundo!
+      saudacao("João"); // Saída: Olá, mundo!
+
+		</script>
+
+		<!--		<script src="../exercicios_js.js" type="text/javascript"></script>-->
+		<!--		<script src="script.js" type="text/javascript"></script>-->
+	</body>
+</html>
+
+<!--// var x = 10;-->
+<!--//-->
+<!--// function exemple(){-->
+<!--//   var x = 20;-->
+<!--//   console.log(x);-->
+<!--// }-->
+<!--//-->
+<!--// exemple();-->
+<!--// console.log(x);-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
